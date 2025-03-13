@@ -1,0 +1,5 @@
+# Dependências da API 
+Flask
+pyodbc
+requests
+pytest

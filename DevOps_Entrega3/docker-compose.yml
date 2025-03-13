@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api-devops-challenge
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      - DB_SERVER=db
+      - DB_NAME=db-devops-challenge
+      - DB_USER=admin_devops
+      - DB_PASSWORD=RM_553315@Azure2024!
+    restart: always
+    volumes:
+      - ./app:/app
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql-server
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "RM_553315@Azure2024!"
+      ACCEPT_EULA: "Y"
+    restart: always
