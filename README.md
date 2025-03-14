@@ -1,151 +1,120 @@
-# CHALLENGE_DEVOPS_TOOLS_CLOUD_COMPUTING - API para Gerenciamento Odontológico
+# Challenge DevOps Tools e Cloud Computing - OdontoPrev
 
-## Integrantes:
+## 📌 Integrantes:
 - **Murilo Ferreira Ramos** - RM553315
 - **Pedro Luiz Prado** - RM553874
 - **William Kenzo Hayashi** - RM552659
 
-## Distribuição de Atividades
+## 📌 Distribuição de Atividades
 A divisão das atividades foi realizada conforme as disciplinas da grade curricular:
 
-- **Murilo**: DevOps Tools, Cloud Computing, Compliance, Quality Assurance, e Tests.
-- **Pedro**: Mobile Application Development, e Advanced Business Development With .NET.
+- **Murilo**: DevOps Tools, Cloud Computing, Compliance, Quality Assurance e Tests.
+- **Pedro**: Mobile Application Development e Advanced Business Development With .NET.
 - **William**: Java Advanced, Mastering Relational e Non-Relational Database, Disruptive Architectures IoT, IOB, Generative AI.
 
-## Cronograma de Tarefas
+## 📌 Cronograma de Tarefas
 - [Link do Trello](https://trello.com/invite/b/6701a3ed3d57ce4ab46300fd/ATTI2c7cf38c5ce5cc04465175370f7a3aedF74A7B2D/backlog-odontoprev)
 
-## Rodagem da Aplicação
-Para executar a API, siga os passos abaixo:
+## 📌 Rodagem da Aplicação
+### 🖥️ Requisitos:
+- Docker e Docker Compose instalados
+- Python 3.12
+- Banco de Dados SQL Server
 
-1. **Subir os containers**:
+### 🔧 Passos para execução:
+1. Clone o repositório:
    ```sh
-   docker-compose up -d
+   git clone https://github.com/mulliru/Challenge_2025_OdontoPrev_Devops.git
+   cd Challenge_2025_OdontoPrev_Devops/DevOps_Entrega3
    ```
-2. **Verificar logs da API**:
+2. Execute os containers do projeto:
    ```sh
-   docker logs -f api-devops-challenge
+   docker-compose up -d --build
    ```
-3. **Testar a API**:
-   - Para verificar se a API está rodando:
-     ```sh
-     curl http://localhost:5000
-     ```
-   - Para visualizar os clientes cadastrados:
-     ```sh
-     curl -X GET http://localhost:5000/clientes
-     ```
+3. Acesse a API no navegador:
+   ```
+   http://localhost:5000
+   ```
+4. Utilize ferramentas como Postman ou cURL para testar os endpoints.
 
-## Listagem de Endpoints
+## 📌 Endpoints
 
-### **1. Criar Cliente**
+### Criar Cliente
 - **Método**: POST
 - **URL**: `http://localhost:5000/clientes`
-- **Body**:
-  ```json
-  {
-    "nome": "João Silva",
-    "email": "joao@example.com",
+- **Exemplo de Body**:
+```json
+{
+    "nome": "João da Silva",
+    "email": "joao.silva@email.com",
     "cpf": "123.456.789-00",
-    "telefone": "(11) 99999-9999"
-  }
-  ```
+    "telefone": "(11) 91234-5678"
+}
+```
 - **Respostas**:
-  - `201 Created`: Cliente criado com sucesso.
-  - `500 Internal Server Error`: Erro ao cadastrar cliente.
+  - `201 Created`: Cliente criado com sucesso
+  - `400 Bad Request`: Erro nos dados enviados
 
-### **2. Obter Todos os Clientes**
-- **Método**: GET
-- **URL**: `http://localhost:5000/clientes`
-- **Respostas**:
-  - `200 OK`: Retorna a lista de clientes cadastrados.
-  - `500 Internal Server Error`: Erro ao buscar clientes.
-
-### **3. Criar Profissional**
+### Criar Profissional
 - **Método**: POST
 - **URL**: `http://localhost:5000/profissionais`
-- **Body**:
-  ```json
-  {
-    "nome": "Dra. Fernanda Souza",
-    "email": "fernanda@example.com",
+- **Exemplo de Body**:
+```json
+{
+    "nome": "Dr. Maria Oliveira",
+    "email": "maria.oliveira@email.com",
     "cpf": "987.654.321-00",
-    "cro": "123456-SP",
-    "especialidade": "Ortodontia",
-    "telefone": "(11) 99999-7777"
-  }
-  ```
-- **Respostas**:
-  - `201 Created`: Profissional cadastrado com sucesso.
-  - `500 Internal Server Error`: Erro ao cadastrar profissional.
+    "cro": "12345",
+    "especialidade": "Odontologia",
+    "telefone": "(11) 99876-5432"
+}
+```
 
-### **4. Criar Atendimento**
+### Criar Atendimento
 - **Método**: POST
 - **URL**: `http://localhost:5000/atendimentos`
-- **Body**:
-  ```json
-  {
+- **Exemplo de Body**:
+```json
+{
     "cliente_id": 1,
     "profissional_id": 1,
-    "descricao": "Consulta de avaliação",
+    "descricao": "Consulta odontológica de rotina",
     "status": "Pendente"
-  }
-  ```
-- **Respostas**:
-  - `201 Created`: Atendimento registrado com sucesso.
-  - `500 Internal Server Error`: Erro ao cadastrar atendimento.
+}
+```
 
-### **5. Criar Pagamento**
+### Criar Pagamento
 - **Método**: POST
 - **URL**: `http://localhost:5000/pagamentos`
-- **Body**:
-  ```json
-  {
+- **Exemplo de Body**:
+```json
+{
     "atendimento_id": 1,
-    "valor": 200.00,
-    "metodo_pagamento": "Cartão de Crédito",
+    "valor": "150.00",
+    "metodo_pagamento": "Cartão de crédito",
     "status": "Pendente"
-  }
-  ```
-- **Respostas**:
-  - `201 Created`: Pagamento registrado com sucesso.
-  - `500 Internal Server Error`: Erro ao cadastrar pagamento.
+}
+```
 
-### **6. Criar Sinistro**
+### Criar Sinistro
 - **Método**: POST
 - **URL**: `http://localhost:5000/sinistros`
-- **Body**:
-  ```json
-  {
+- **Exemplo de Body**:
+```json
+{
     "atendimento_id": 1,
-    "tipo_sinistro": "Erro no procedimento",
-    "descricao": "Paciente relatou dor intensa após o procedimento.",
+    "tipo_sinistro": "Quebra de dente",
+    "descricao": "Quebra de dente durante a consulta",
     "status": "Em análise"
-  }
-  ```
-- **Respostas**:
-  - `201 Created`: Sinistro registrado com sucesso.
-  - `500 Internal Server Error`: Erro ao cadastrar sinistro.
+}
+```
 
-## Banco de Dados
-A API está conectada a um banco de dados SQL Server hospedado no **Azure**, utilizando as credenciais configuradas no código.
+## 📌 Diagrama Relacional
+![Diagrama Relacional](Documentos/Relacional.png)
 
-## Tecnologias Utilizadas
-- **Python 3.12** + Flask
-- **Banco de Dados**: SQL Server (Azure)
-- **Docker e Docker Compose**
-- **UnixODBC + pyODBC** para conexão com SQL Server
+## 📌 Prints de Testes no Postman
+![Teste Postman](Documentos/teste_postman.png)
 
-## Link do Vídeo de Apresentação
-- [Link do Vídeo](https://youtu.be/Y9_4OHeAdfs)
-
-## Observações
-- **Certifique-se de que o banco de dados está rodando** antes de iniciar a API.
-- Caso enfrente problemas, utilize os logs dos containers para depuração:
-  ```sh
-  docker logs api-devops-challenge
-  ```
-
----
-🚀 **Projeto desenvolvido para a disciplina de DevOps Tools e Cloud Computing!**
+## 📌 Link do Vídeo de Apresentação
+- [Apresentação do Projeto](https://youtu.be/Y9_4OHeAdfs)
 
