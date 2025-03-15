@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E4852E33-A0B6-C8DB-87BE-6F4CF6986A93" name="atendimentos">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:32:33 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_atendimentos" id="2E973380-BBDD-92F1-6F7F-A3DF7070BDEB">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:32:43 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="2BF5CC88-DB66-9FE7-A03B-82EA796D1C84">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:32:46 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_atendimento" id="0E010623-F8A9-F34F-CA6E-5C27785F4072">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:32:47 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="5DF412B0-5334-9D82-BB22-FB40259EE79E">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:32:47 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cpf" id="608DA9F3-AD2F-197B-DEAD-A8E46AB7DDB2">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:54:08 UTC</createdTime>
+<generatorID>26401502-9858-C155-B72C-49EBBA206705</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<referedAttribute>5DDFB85C-053D-F358-008B-7F8E2BE063A9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_profissional" id="EDDDA176-D439-8F8F-5E9F-FCB765200837">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:54:22 UTC</createdTime>
+<generatorID>020CE8CB-5CDB-F040-F5DD-7E0C072C03BD</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<referedAttribute>4B68C012-ADC2-4505-5A4E-0CFB3422E90F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="9154B109-2ACE-02AC-0E65-A5C02BF77326">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:54:22 UTC</createdTime>
+<generatorID>020CE8CB-5CDB-F040-F5DD-7E0C072C03BD</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<referedAttribute>EBB0CD2D-2681-F54A-ECA5-D103FE7885BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_cliente" id="7EF9F417-C304-E26C-EBEA-D500DB18D0B6">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:56:45 UTC</createdTime>
+<generatorID>26401502-9858-C155-B72C-49EBBA206705</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<referedAttribute>A6E0E98A-FB16-ED3E-FB9D-A0929802E6F1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8BE42BAE-BE3B-DF03-CDC8-B07BE7273144" name="atendimentos PK">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:35:29 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2E973380-BBDD-92F1-6F7F-A3DF7070BDEB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

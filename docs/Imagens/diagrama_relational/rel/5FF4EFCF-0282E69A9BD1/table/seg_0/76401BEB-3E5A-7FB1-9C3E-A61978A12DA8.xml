@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="76401BEB-3E5A-7FB1-9C3E-A61978A12DA8" name="sinistros">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:57:40 UTC</createdTime>
+<generatorID>95F482D6-D942-3831-E074-0F130253EC57</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sinistro" id="BC69D0A2-5253-62F1-C6FC-1FE35AF7CA8E">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:57:40 UTC</createdTime>
+<generatorID>BE94820A-60B6-D0DC-6BA6-86AE0B3528B9</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="2BC61732-E03A-7AA2-07E1-FBE4857544D7">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:57:40 UTC</createdTime>
+<generatorID>85EADF8A-D143-2034-93C4-E41BF59C272A</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_registro" id="F8B4C8F6-773C-3655-79C5-BD965680245D">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:57:40 UTC</createdTime>
+<generatorID>F84B508A-46F8-4DA3-DA6F-9A4C20AA9A36</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="EF777924-A4D8-31FD-FF18-5F9E8DFC966A">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:57:40 UTC</createdTime>
+<generatorID>8F8F2693-3253-C9A8-F451-B53AC8F40EED</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="atendimentos_id_atendimentos" id="8295DD1A-5654-E1A2-E309-41FF16C01F0B">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:57:40 UTC</createdTime>
+<generatorID>8CC64DB1-35CA-06F4-1242-CD8BA82FBB6B</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F527155E-D597-9271-4319-3E16864ED683" referredColumn="383CB25C-F127-69F0-7604-4434D61A80C4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="482B693B-8D5B-B7F1-4D0A-823779ADF01E" name="sinistros_PK">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:57:40 UTC</createdTime>
+<generatorID>B5852209-1CF1-D22C-FE74-EAC23700ADC9</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC69D0A2-5253-62F1-C6FC-1FE35AF7CA8E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C266F7FE-CFAD-C699-EA30-783816031CE4" name="sinistros__IDX">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:57:40 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D646A75D-6BE7-08B3-7220-CA04A108B8F4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="8295DD1A-5654-E1A2-E309-41FF16C01F0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B0B534F-5DF3-917E-DD29-36A72207821E" name="sinistros_atendimentos_FK">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:57:40 UTC</createdTime>
+<generatorID>D646A75D-6BE7-08B3-7220-CA04A108B8F4</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8295DD1A-5654-E1A2-E309-41FF16C01F0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="95F482D6-D942-3831-E074-0F130253EC57" name="sinistros">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:52:07 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_sinistro" id="BE94820A-60B6-D0DC-6BA6-86AE0B3528B9">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:52:15 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descricao" id="85EADF8A-D143-2034-93C4-E41BF59C272A">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:52:15 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_registro" id="F84B508A-46F8-4DA3-DA6F-9A4C20AA9A36">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:52:15 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="8F8F2693-3253-C9A8-F451-B53AC8F40EED">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:52:16 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_atendimentos" id="8CC64DB1-35CA-06F4-1242-CD8BA82FBB6B">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:54:42 UTC</createdTime>
+<generatorID>D646A75D-6BE7-08B3-7220-CA04A108B8F4</generatorID>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<referedAttribute>2E973380-BBDD-92F1-6F7F-A3DF7070BDEB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B5852209-1CF1-D22C-FE74-EAC23700ADC9" name="sinistros PK">
+<createdBy>murillo</createdBy>
+<createdTime>2025-03-15 22:52:29 UTC</createdTime>
+<ownerDesignName>diagrama_relational</ownerDesignName>
+<engineerTo>
+<item key="5FF4EFCF-0AA5-1678-03F0-0282E69A9BD1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BE94820A-60B6-D0DC-6BA6-86AE0B3528B9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
