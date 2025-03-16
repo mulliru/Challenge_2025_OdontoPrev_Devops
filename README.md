@@ -6,6 +6,8 @@
 - **Pedro Luiz Prado** - RM553874
 - **William Kenzo Hayashi** - RM552659
 
+
+
 ## Distribuição de Atividades
 
 A divisão das atividades foi realizada conforme as disciplinas da grade curricular:
@@ -21,6 +23,14 @@ A divisão das atividades foi realizada conforme as disciplinas da grade curricu
 ## Link do Vídeo de Apresentação
 
 - [Link do Vídeo](https://youtu.be/HL41m0EBVng)
+
+## Documentação Completa
+
+A documentação técnica detalhada do projeto, incluindo descrição da arquitetura, banco de dados, fluxos de requisição e melhorias, está disponível na pasta [`docs`](docs/). 
+
+## Diagrama de Arquitetura
+
+![Diagrama de Arquitetura](docs/Imagens/Diagrama_Arquitetura_Challenge_DevOps.png)
 
 ## Rodagem da Aplicação
 
@@ -169,4 +179,3 @@ Para executar a API, siga os passos abaixo:
 ---
 
 Este projeto foi desenvolvido como parte do **Challenge de DevOps Tools e Cloud Computing**, focando na implementação e automação de uma API REST conectada a um banco de dados SQL Server.
-

@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="diagrama_relational" id="6F1D6CD5-0CEE-9CF0-0621-2FE62E37ECF0" version="3.5">
-<createdBy>murillo</createdBy>
-<createdTime>2025-03-15 22:24:15 UTC</createdTime>
-<ownerDesignName>diagrama_relational</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>6F1D6CD5-0CEE-9CF0-0621-2FE62E37ECF0</designId>
-</OSDM_Design>
