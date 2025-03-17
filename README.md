@@ -65,7 +65,7 @@ Para executar a API, siga os passos abaixo:
    Invoke-RestMethod -Uri http://localhost:5000/clientes -Method Get
    ```
    ![Invoke Clientes](docs/Imagens/invoke_get_clientes.png)
-   ![Navegador Home](docs/Imagens/browser_home.png)
+   ![Navegador Home](docs/Imagens/browser_home_localhost.png)
 
 ## Listagem de Endpoints
 
