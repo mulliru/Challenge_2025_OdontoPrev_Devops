@@ -28,9 +28,9 @@ A divisão das atividades foi realizada conforme as disciplinas da grade curricu
 
 A documentação técnica detalhada do projeto, incluindo descrição da arquitetura, banco de dados, fluxos de requisição e melhorias, está disponível na pasta [`docs`](docs/). 
 
-## Diagrama de Arquitetura
+## Desenho de Arquitetura
 
-![Diagrama de Arquitetura](docs/Imagens/Diagrama_Arquitetura_Challenge_DevOps.png)
+![Diagrama de Arquitetura](docs/Imagens/Desenho_Arquitetura.png)
 
 ## Rodagem da Aplicação
 
